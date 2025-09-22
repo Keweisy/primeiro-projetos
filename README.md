@@ -1,99 +1,67 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# Controle de Notas
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## 📝 Sobre o Projeto
 
-## Description
+**Controle de Notas** é uma aplicação de console (CLI) desenvolvida como um trabalho acadêmico. O sistema permite ao usuário gerenciar as notas de um aluno ao longo de quatro bimestres, consultar notas específicas e verificar a situação final de aprovação ou reprovação com base na média.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## ✨ Funcionalidades
 
-## Project setup
+-   **Atribuir Notas:** Adiciona ou atualiza a nota de um bimestre específico.
+-   **Consultar Notas:** Exibe a nota de um bimestre informado pelo usuário.
+-   **Verificar Situação:** Calcula a média final e informa se o aluno foi aprovado ou reprovado.
 
-```bash
-$ npm install
-```
+Para um detalhamento completo de cada funcionalidade, veja o arquivo [funcionalidades.md](./funcionalidades.md).
 
-## Compile and run the project
+## 🛠️ Tecnologias Utilizadas
 
-```bash
-# development
-$ npm run start
+O projeto foi construído utilizando as seguintes tecnologias:
 
-# watch mode
-$ npm run start:dev
+-   **TypeScript:** Linguagem principal para o desenvolvimento, adicionando tipagem estática ao JavaScript.
+-   **Node.js:** Ambiente de execução para o código do lado do servidor.
+-   **readline-sync:** Biblioteca para receber input do usuário de forma síncrona no console.
 
-# production mode
-$ npm run start:prod
-```
+## 🚀 Como Executar o Projeto
 
-## Run tests
+Siga os passos abaixo para executar o projeto em seu ambiente local.
 
-```bash
-# unit tests
-$ npm run test
+### Pré-requisitos
 
-# e2e tests
-$ npm run test:e2e
+Antes de começar, você vai precisar ter instalado em sua máquina:
+-   [Node.js](https://nodejs.org/en/) (que já vem com o npm)
+-   [Git](https://git-scm.com/) (opcional, para clonar o repositório)
 
-# test coverage
-$ npm run test:cov
-```
+### Passos para Execução
 
-## Deployment
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/lucasfernandes18/ControleDeNotas.git](https://github.com/lucasfernandes18/ControleDeNotas.git)
+    ```
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+2.  **Acesse a pasta do projeto:**
+    ```bash
+    cd controle-de-notas
+    ```
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
 
-```bash
-$ npm install -g mau
-$ mau deploy
-```
+4.  **Execute a aplicação:**
+    ```bash
+    npm run dev
+    ```
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+Ao executar o último comando, um menu interativo aparecerá no seu terminal para que você possa utilizar o sistema.
 
-## Resources
+## 📁 Estrutura de Arquivos
 
-Check out a few resources that may come in handy when working with NestJS:
+O projeto está organizado da seguinte forma:
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+├── Aluno.ts            # (Model) Classe que representa o aluno e suas regras de negócio.
 
-## Support
+├── AlunoController.ts  # (Controller) Classe que gerencia a interação com o usuário.
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+├── index.ts            # Ponto de entrada da aplicação.
+└── ...                 # Outros arquivos de configuração (package.json, tsconfig.json etc).
